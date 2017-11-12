@@ -1,3 +1,9 @@
 kolomiets_my_homepage:
     path:     /
     defaults: { _controller: KolomietsMyBundle:Default:index }
+kolomiets_my_contacts:
+    path:     /contacts
+    defaults: { _controller: KolomietsMyBundle:Contacts:contact }
+kolomiets_my_content:
+    path:     /content/{align}
+    defaults: { _controller: KolomietsMyBundle:Content:content, align: 'horizontal' }

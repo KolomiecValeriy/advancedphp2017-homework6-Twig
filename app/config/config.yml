@@ -30,7 +30,9 @@ framework:
         save_path: '%kernel.project_dir%/var/sessions/%kernel.environment%'
     fragments: ~
     http_method_override: true
-    assets: ~
+    assets:
+        version: 1
+        base_urls: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/'
     php_errors:
         log: true
 

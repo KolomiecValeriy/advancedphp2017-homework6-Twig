@@ -1,0 +1,9 @@
+{% extends '@KolomietsMy/layout.html.twig' %}
+{% block body %}
+    <h1 class="text-center">Content</h1>
+    {% include '@KolomietsMy/_urls.html.twig' with { urls: urls } %}
+
+    {% embed 'KolomietsMyBundle:Content:_align.html.twig' with { align: align } %}
+        
+    {% endembed %}
+{% endblock %}

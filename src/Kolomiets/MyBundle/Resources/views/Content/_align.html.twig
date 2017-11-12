@@ -1,0 +1,21 @@
+{% if align == 'horizontal' %}
+    <div class="row">
+        <div class="col-md-6">
+            {% block firstContent %}<h2>Some content</h2>{% endblock %}
+        </div>
+        <div class="col-md-6">
+            {% block secondContent %}<h2>Some content</h2>{% endblock %}
+        </div>
+    </div>
+{% elseif align == 'vertical' %}
+    <div class="row">
+        <div class="col-md-12">
+            {% block thirdContent %}<h2>Some content</h2>{% endblock %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            {% block fouthContent %}<h2>Some content</h2>{% endblock %}
+        </div>
+    </div>
+{% endif %}
